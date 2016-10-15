@@ -11,6 +11,16 @@
 		03F886D81DB25C2E003E2778 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03F886D71DB25C2E003E2778 /* Assets.xcassets */; };
 		03F886DB1DB25C2E003E2778 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03F886D91DB25C2E003E2778 /* LaunchScreen.storyboard */; };
 		03F886FC1DB25EC7003E2778 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F886E51DB25EC7003E2778 /* AppDelegate.m */; };
+		03F886FF1DB26680003E2778 /* CHTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F886FE1DB26680003E2778 /* CHTabBarController.m */; };
+		03F887031DB266AE003E2778 /* CHEssenceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F887011DB266AE003E2778 /* CHEssenceViewController.m */; };
+		03F887041DB266AE003E2778 /* CHEssenceViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03F887021DB266AE003E2778 /* CHEssenceViewController.xib */; };
+		03F887081DB266C9003E2778 /* CHMineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F887061DB266C9003E2778 /* CHMineViewController.m */; };
+		03F8870D1DB266E1003E2778 /* CHNewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F8870B1DB266E1003E2778 /* CHNewViewController.m */; };
+		03F8870E1DB266E1003E2778 /* CHNewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03F8870C1DB266E1003E2778 /* CHNewViewController.xib */; };
+		03F887121DB26713003E2778 /* CHPublishViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F887101DB26713003E2778 /* CHPublishViewController.m */; };
+		03F887131DB26713003E2778 /* CHPublishViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03F887111DB26713003E2778 /* CHPublishViewController.xib */; };
+		03F8871B1DB2685B003E2778 /* CHFriendTrendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F887191DB2685B003E2778 /* CHFriendTrendViewController.m */; };
+		03F8871C1DB2685B003E2778 /* CHFriendTrendViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03F8871A1DB2685B003E2778 /* CHFriendTrendViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +31,22 @@
 		03F886DC1DB25C2E003E2778 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		03F886E41DB25EC7003E2778 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		03F886E51DB25EC7003E2778 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		03F886FD1DB26680003E2778 /* CHTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHTabBarController.h; sourceTree = "<group>"; };
+		03F886FE1DB26680003E2778 /* CHTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHTabBarController.m; sourceTree = "<group>"; };
+		03F887001DB266AE003E2778 /* CHEssenceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHEssenceViewController.h; sourceTree = "<group>"; };
+		03F887011DB266AE003E2778 /* CHEssenceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHEssenceViewController.m; sourceTree = "<group>"; };
+		03F887021DB266AE003E2778 /* CHEssenceViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CHEssenceViewController.xib; sourceTree = "<group>"; };
+		03F887051DB266C9003E2778 /* CHMineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHMineViewController.h; sourceTree = "<group>"; };
+		03F887061DB266C9003E2778 /* CHMineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHMineViewController.m; sourceTree = "<group>"; };
+		03F8870A1DB266E1003E2778 /* CHNewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHNewViewController.h; sourceTree = "<group>"; };
+		03F8870B1DB266E1003E2778 /* CHNewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHNewViewController.m; sourceTree = "<group>"; };
+		03F8870C1DB266E1003E2778 /* CHNewViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CHNewViewController.xib; sourceTree = "<group>"; };
+		03F8870F1DB26713003E2778 /* CHPublishViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHPublishViewController.h; sourceTree = "<group>"; };
+		03F887101DB26713003E2778 /* CHPublishViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHPublishViewController.m; sourceTree = "<group>"; };
+		03F887111DB26713003E2778 /* CHPublishViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CHPublishViewController.xib; sourceTree = "<group>"; };
+		03F887181DB2685B003E2778 /* CHFriendTrendViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHFriendTrendViewController.h; sourceTree = "<group>"; };
+		03F887191DB2685B003E2778 /* CHFriendTrendViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHFriendTrendViewController.m; sourceTree = "<group>"; };
+		03F8871A1DB2685B003E2778 /* CHFriendTrendViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CHFriendTrendViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +99,7 @@
 		03F886E21DB25EC7003E2778 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				03F887141DB26848003E2778 /* FriendTrend(关注) */,
 				03F886E31DB25EC7003E2778 /* AppDelegate */,
 				03F886E61DB25EC7003E2778 /* Essence(精华) */,
 				03F886EA1DB25EC7003E2778 /* Main(主要) */,
@@ -106,6 +133,9 @@
 		03F886E71DB25EC7003E2778 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				03F887001DB266AE003E2778 /* CHEssenceViewController.h */,
+				03F887011DB266AE003E2778 /* CHEssenceViewController.m */,
+				03F887021DB266AE003E2778 /* CHEssenceViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -137,6 +167,8 @@
 		03F886EB1DB25EC7003E2778 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				03F886FD1DB26680003E2778 /* CHTabBarController.h */,
+				03F886FE1DB26680003E2778 /* CHTabBarController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -168,6 +200,8 @@
 		03F886EF1DB25EC7003E2778 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				03F887051DB266C9003E2778 /* CHMineViewController.h */,
+				03F887061DB266C9003E2778 /* CHMineViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -199,6 +233,9 @@
 		03F886F31DB25EC7003E2778 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				03F8870A1DB266E1003E2778 /* CHNewViewController.h */,
+				03F8870B1DB266E1003E2778 /* CHNewViewController.m */,
+				03F8870C1DB266E1003E2778 /* CHNewViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -245,6 +282,9 @@
 		03F886F91DB25EC7003E2778 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				03F8870F1DB26713003E2778 /* CHPublishViewController.h */,
+				03F887101DB26713003E2778 /* CHPublishViewController.m */,
+				03F887111DB26713003E2778 /* CHPublishViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -257,6 +297,40 @@
 			sourceTree = "<group>";
 		};
 		03F886FB1DB25EC7003E2778 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		03F887141DB26848003E2778 /* FriendTrend(关注) */ = {
+			isa = PBXGroup;
+			children = (
+				03F887151DB26848003E2778 /* Controller */,
+				03F887161DB26848003E2778 /* Model */,
+				03F887171DB26848003E2778 /* View */,
+			);
+			path = "FriendTrend(关注)";
+			sourceTree = "<group>";
+		};
+		03F887151DB26848003E2778 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				03F887181DB2685B003E2778 /* CHFriendTrendViewController.h */,
+				03F887191DB2685B003E2778 /* CHFriendTrendViewController.m */,
+				03F8871A1DB2685B003E2778 /* CHFriendTrendViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		03F887161DB26848003E2778 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		03F887171DB26848003E2778 /* View */ = {
 			isa = PBXGroup;
 			children = (
 			);
@@ -321,8 +395,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03F8870E1DB266E1003E2778 /* CHNewViewController.xib in Resources */,
 				03F886DB1DB25C2E003E2778 /* LaunchScreen.storyboard in Resources */,
+				03F887041DB266AE003E2778 /* CHEssenceViewController.xib in Resources */,
 				03F886D81DB25C2E003E2778 /* Assets.xcassets in Resources */,
+				03F8871C1DB2685B003E2778 /* CHFriendTrendViewController.xib in Resources */,
+				03F887131DB26713003E2778 /* CHPublishViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -333,8 +411,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03F887081DB266C9003E2778 /* CHMineViewController.m in Sources */,
+				03F887031DB266AE003E2778 /* CHEssenceViewController.m in Sources */,
+				03F8870D1DB266E1003E2778 /* CHNewViewController.m in Sources */,
 				03F886FC1DB25EC7003E2778 /* AppDelegate.m in Sources */,
+				03F886FF1DB26680003E2778 /* CHTabBarController.m in Sources */,
 				03F886CD1DB25C2E003E2778 /* main.m in Sources */,
+				03F887121DB26713003E2778 /* CHPublishViewController.m in Sources */,
+				03F8871B1DB2685B003E2778 /* CHFriendTrendViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -440,6 +524,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				INFOPLIST_FILE = BUDEJIE19/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -452,6 +537,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				INFOPLIST_FILE = BUDEJIE19/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

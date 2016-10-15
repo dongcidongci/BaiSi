@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "CHTabBarController.h"
 
 @interface AppDelegate ()
 
@@ -16,7 +17,11 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    //NSLog(@"%@", [NSSearchPathForDirectoriesInDomains(NSLibraryDirectory, NSUserDomainMask, YES) lastObject]);
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    CHTabBarController *tabBarVc = [[CHTabBarController alloc] init];
+    self.window.rootViewController = tabBarVc;
+    [self.window makeKeyAndVisible];
     return YES;
 }
 
