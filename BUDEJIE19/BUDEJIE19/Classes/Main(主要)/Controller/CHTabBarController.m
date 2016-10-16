@@ -7,6 +7,7 @@
 //
 
 #import "CHTabBarController.h"
+#import "CHTabBar.h"
 
 @interface CHTabBarController ()
 
@@ -16,19 +17,33 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
     NSArray *VCNames = @[
                          @"CHEssenceViewController",
-                         @"CHMineViewController",
                          @"CHNewViewController",
                          @"CHPublishViewController",
-                         @"CHFriendTrendViewController"
+                         @"CHFriendTrendViewController",
+                         @"CHMineViewController"
                          ];
+    NSArray *navigationVC = @[
+                              @"CHEssenceNavigationController",
+                              @"CHNewNavigationController",
+                              @"CHPublishNavigationController",
+                              @"CHFriendTrendNavigationController",
+                              @"CHMineNavigationController"
+                              ];
     for (int i = 0; i < VCNames.count; i ++) {
         UIViewController *vc = [[NSClassFromString(VCNames[i]) alloc] init];
-        UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:vc];
+        UINavigationController *nav = [[NSClassFromString(navigationVC[i]) alloc] initWithRootViewController:vc];
         [self addChildViewController:nav];
     }
     
+    CHTabBar *tabBar = [[CHTabBar alloc] init];
+    
+    //设置导航控制器的整体颜色
+    tabBar.tintColor = [UIColor colorWithRed:142 / 225.5  green:142 / 225.5  blue:142 / 225.5  alpha:1];
+    //KVC修改属性值
+    [self setValue:tabBar forKeyPath:@"tabBar"];
     
     
     

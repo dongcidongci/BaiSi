@@ -22,6 +22,7 @@
     CHTabBarController *tabBarVc = [[CHTabBarController alloc] init];
     self.window.rootViewController = tabBarVc;
     [self.window makeKeyAndVisible];
+  
     return YES;
 }
 
