@@ -15,6 +15,31 @@
 		037520791DB278B300CCD4DD /* UIImage+CHImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 037520781DB278B300CCD4DD /* UIImage+CHImage.m */; };
 		0375207C1DB27D1200CCD4DD /* CHTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 0375207B1DB27D1200CCD4DD /* CHTabBar.m */; };
 		0375207F1DB27E3E00CCD4DD /* UIView+CHFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 0375207E1DB27E3E00CCD4DD /* UIView+CHFrame.m */; };
+		037520831DB39E1F00CCD4DD /* UIBarButtonItem+CHBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 037520821DB39E1F00CCD4DD /* UIBarButtonItem+CHBarButtonItem.m */; };
+		0375208A1DB3A48700CCD4DD /* CHSettingTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 037520891DB3A48700CCD4DD /* CHSettingTableViewController.m */; };
+		0375208D1DB3AB6A00CCD4DD /* CHView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0375208C1DB3AB6A00CCD4DD /* CHView.m */; };
+		037520901DB3E33600CCD4DD /* CHRecomandViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0375208F1DB3E33600CCD4DD /* CHRecomandViewController.m */; };
+		037520931DB46DDD00CCD4DD /* CHLoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = 037520921DB46DDD00CCD4DD /* CHLoginView.m */; };
+		037520951DB46DEB00CCD4DD /* CHLoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 037520941DB46DEB00CCD4DD /* CHLoginView.xib */; };
+		037520981DB474CA00CCD4DD /* CHTextFView.m in Sources */ = {isa = PBXBuildFile; fileRef = 037520971DB474CA00CCD4DD /* CHTextFView.m */; };
+		0375209A1DB474D500CCD4DD /* CHTextFView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 037520991DB474D500CCD4DD /* CHTextFView.xib */; };
+		0375209D1DB4788100CCD4DD /* CHLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0375209C1DB4788100CCD4DD /* CHLoginViewController.m */; };
+		037520A01DB47EC300CCD4DD /* CHRegistView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0375209F1DB47EC300CCD4DD /* CHRegistView.m */; };
+		037520A21DB47ED500CCD4DD /* CHRegistView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 037520A11DB47ED500CCD4DD /* CHRegistView.xib */; };
+		037520A41DB483B500CCD4DD /* login_rgister_textfield_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 037520A31DB483B500CCD4DD /* login_rgister_textfield_bg.png */; };
+		037520AD1DB4C80600CCD4DD /* CHSetiingCellItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 037520AC1DB4C80600CCD4DD /* CHSetiingCellItem.m */; };
+		037520B01DB4F1CD00CCD4DD /* CHCollectionVCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 037520AF1DB4F1CD00CCD4DD /* CHCollectionVCell.m */; };
+		037520B31DB5060F00CCD4DD /* CHCollectionCellItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 037520B21DB5060F00CCD4DD /* CHCollectionCellItem.m */; };
+		037520B61DB5175D00CCD4DD /* CHCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 037520B51DB5175D00CCD4DD /* CHCollectionView.m */; };
+		037520C81DB6328400CCD4DD /* LaunchImage-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 037520C11DB6328400CCD4DD /* LaunchImage-568h@2x.png */; };
+		037520C91DB6328400CCD4DD /* LaunchImage-700-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 037520C21DB6328400CCD4DD /* LaunchImage-700-568h@2x.png */; };
+		037520CA1DB6328400CCD4DD /* LaunchImage-700@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 037520C31DB6328400CCD4DD /* LaunchImage-700@2x.png */; };
+		037520CB1DB6328400CCD4DD /* LaunchImage-800-667h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 037520C41DB6328400CCD4DD /* LaunchImage-800-667h@2x.png */; };
+		037520CC1DB6328400CCD4DD /* LaunchImage-800-Portrait-736h@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 037520C51DB6328400CCD4DD /* LaunchImage-800-Portrait-736h@3x.png */; };
+		037520CD1DB6328400CCD4DD /* LaunchImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 037520C61DB6328400CCD4DD /* LaunchImage.png */; };
+		037520CE1DB6328400CCD4DD /* LaunchImage@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 037520C71DB6328400CCD4DD /* LaunchImage@2x.png */; };
+		037520D21DB634FC00CCD4DD /* CHADDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 037520D01DB634FC00CCD4DD /* CHADDViewController.m */; };
+		037520D31DB634FC00CCD4DD /* CHADDViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 037520D11DB634FC00CCD4DD /* CHADDViewController.xib */; };
 		03F886CD1DB25C2E003E2778 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F886CC1DB25C2E003E2778 /* main.m */; };
 		03F886D81DB25C2E003E2778 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03F886D71DB25C2E003E2778 /* Assets.xcassets */; };
 		03F886DB1DB25C2E003E2778 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03F886D91DB25C2E003E2778 /* LaunchScreen.storyboard */; };
@@ -29,6 +54,7 @@
 		03F887131DB26713003E2778 /* CHPublishViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03F887111DB26713003E2778 /* CHPublishViewController.xib */; };
 		03F8871B1DB2685B003E2778 /* CHFriendTrendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F887191DB2685B003E2778 /* CHFriendTrendViewController.m */; };
 		03F8871C1DB2685B003E2778 /* CHFriendTrendViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03F8871A1DB2685B003E2778 /* CHFriendTrendViewController.xib */; };
+		0EB358B3B70842100F4183F1 /* libPods-BUDEJIE19.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DEB9B8EA069F238C9B78449 /* libPods-BUDEJIE19.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +75,44 @@
 		0375207D1DB27E3E00CCD4DD /* UIView+CHFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+CHFrame.h"; sourceTree = "<group>"; };
 		0375207E1DB27E3E00CCD4DD /* UIView+CHFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+CHFrame.m"; sourceTree = "<group>"; };
 		037520801DB27E5800CCD4DD /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		037520811DB39E1F00CCD4DD /* UIBarButtonItem+CHBarButtonItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+CHBarButtonItem.h"; sourceTree = "<group>"; };
+		037520821DB39E1F00CCD4DD /* UIBarButtonItem+CHBarButtonItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+CHBarButtonItem.m"; sourceTree = "<group>"; };
+		037520881DB3A48700CCD4DD /* CHSettingTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHSettingTableViewController.h; sourceTree = "<group>"; };
+		037520891DB3A48700CCD4DD /* CHSettingTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHSettingTableViewController.m; sourceTree = "<group>"; };
+		0375208B1DB3AB6A00CCD4DD /* CHView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHView.h; sourceTree = "<group>"; };
+		0375208C1DB3AB6A00CCD4DD /* CHView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHView.m; sourceTree = "<group>"; };
+		0375208E1DB3E33600CCD4DD /* CHRecomandViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHRecomandViewController.h; sourceTree = "<group>"; };
+		0375208F1DB3E33600CCD4DD /* CHRecomandViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHRecomandViewController.m; sourceTree = "<group>"; };
+		037520911DB46DDD00CCD4DD /* CHLoginView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHLoginView.h; sourceTree = "<group>"; };
+		037520921DB46DDD00CCD4DD /* CHLoginView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHLoginView.m; sourceTree = "<group>"; };
+		037520941DB46DEB00CCD4DD /* CHLoginView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CHLoginView.xib; sourceTree = "<group>"; };
+		037520961DB474CA00CCD4DD /* CHTextFView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHTextFView.h; sourceTree = "<group>"; };
+		037520971DB474CA00CCD4DD /* CHTextFView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHTextFView.m; sourceTree = "<group>"; };
+		037520991DB474D500CCD4DD /* CHTextFView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CHTextFView.xib; sourceTree = "<group>"; };
+		0375209B1DB4788100CCD4DD /* CHLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHLoginViewController.h; sourceTree = "<group>"; };
+		0375209C1DB4788100CCD4DD /* CHLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHLoginViewController.m; sourceTree = "<group>"; };
+		0375209E1DB47EC300CCD4DD /* CHRegistView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHRegistView.h; sourceTree = "<group>"; };
+		0375209F1DB47EC300CCD4DD /* CHRegistView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHRegistView.m; sourceTree = "<group>"; };
+		037520A11DB47ED500CCD4DD /* CHRegistView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CHRegistView.xib; sourceTree = "<group>"; };
+		037520A31DB483B500CCD4DD /* login_rgister_textfield_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = login_rgister_textfield_bg.png; sourceTree = "<group>"; };
+		037520AB1DB4C80600CCD4DD /* CHSetiingCellItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHSetiingCellItem.h; sourceTree = "<group>"; };
+		037520AC1DB4C80600CCD4DD /* CHSetiingCellItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHSetiingCellItem.m; sourceTree = "<group>"; };
+		037520AE1DB4F1CD00CCD4DD /* CHCollectionVCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHCollectionVCell.h; sourceTree = "<group>"; };
+		037520AF1DB4F1CD00CCD4DD /* CHCollectionVCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHCollectionVCell.m; sourceTree = "<group>"; };
+		037520B11DB5060F00CCD4DD /* CHCollectionCellItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHCollectionCellItem.h; sourceTree = "<group>"; };
+		037520B21DB5060F00CCD4DD /* CHCollectionCellItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHCollectionCellItem.m; sourceTree = "<group>"; };
+		037520B41DB5175D00CCD4DD /* CHCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHCollectionView.h; sourceTree = "<group>"; };
+		037520B51DB5175D00CCD4DD /* CHCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHCollectionView.m; sourceTree = "<group>"; };
+		037520C11DB6328400CCD4DD /* LaunchImage-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchImage-568h@2x.png"; sourceTree = "<group>"; };
+		037520C21DB6328400CCD4DD /* LaunchImage-700-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchImage-700-568h@2x.png"; sourceTree = "<group>"; };
+		037520C31DB6328400CCD4DD /* LaunchImage-700@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchImage-700@2x.png"; sourceTree = "<group>"; };
+		037520C41DB6328400CCD4DD /* LaunchImage-800-667h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchImage-800-667h@2x.png"; sourceTree = "<group>"; };
+		037520C51DB6328400CCD4DD /* LaunchImage-800-Portrait-736h@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchImage-800-Portrait-736h@3x.png"; sourceTree = "<group>"; };
+		037520C61DB6328400CCD4DD /* LaunchImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LaunchImage.png; sourceTree = "<group>"; };
+		037520C71DB6328400CCD4DD /* LaunchImage@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchImage@2x.png"; sourceTree = "<group>"; };
+		037520CF1DB634FC00CCD4DD /* CHADDViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHADDViewController.h; sourceTree = "<group>"; };
+		037520D01DB634FC00CCD4DD /* CHADDViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHADDViewController.m; sourceTree = "<group>"; };
+		037520D11DB634FC00CCD4DD /* CHADDViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CHADDViewController.xib; sourceTree = "<group>"; };
 		03F886C81DB25C2E003E2778 /* BUDEJIE19.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BUDEJIE19.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		03F886CC1DB25C2E003E2778 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		03F886D71DB25C2E003E2778 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -72,6 +136,9 @@
 		03F887181DB2685B003E2778 /* CHFriendTrendViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHFriendTrendViewController.h; sourceTree = "<group>"; };
 		03F887191DB2685B003E2778 /* CHFriendTrendViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHFriendTrendViewController.m; sourceTree = "<group>"; };
 		03F8871A1DB2685B003E2778 /* CHFriendTrendViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CHFriendTrendViewController.xib; sourceTree = "<group>"; };
+		1DEB9B8EA069F238C9B78449 /* libPods-BUDEJIE19.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BUDEJIE19.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		593DC9DE81D9A92AACEA4CF8 /* Pods-BUDEJIE19.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BUDEJIE19.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BUDEJIE19/Pods-BUDEJIE19.debug.xcconfig"; sourceTree = "<group>"; };
+		9055BF779293424E6A5E3363 /* Pods-BUDEJIE19.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BUDEJIE19.release.xcconfig"; path = "Pods/Target Support Files/Pods-BUDEJIE19/Pods-BUDEJIE19.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,17 +146,101 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0EB358B3B70842100F4183F1 /* libPods-BUDEJIE19.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		037520841DB3A44400CCD4DD /* Setting(设置) */ = {
+			isa = PBXGroup;
+			children = (
+				037520851DB3A44400CCD4DD /* Controller */,
+				037520861DB3A44400CCD4DD /* Model */,
+				037520871DB3A44400CCD4DD /* View */,
+			);
+			path = "Setting(设置)";
+			sourceTree = "<group>";
+		};
+		037520851DB3A44400CCD4DD /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				037520881DB3A48700CCD4DD /* CHSettingTableViewController.h */,
+				037520891DB3A48700CCD4DD /* CHSettingTableViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		037520861DB3A44400CCD4DD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		037520871DB3A44400CCD4DD /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		037520B71DB6321400CCD4DD /* ADD(广告) */ = {
+			isa = PBXGroup;
+			children = (
+				037520B81DB6321400CCD4DD /* Controller */,
+				037520B91DB6321400CCD4DD /* Model */,
+				037520BA1DB6321400CCD4DD /* View */,
+			);
+			path = "ADD(广告)";
+			sourceTree = "<group>";
+		};
+		037520B81DB6321400CCD4DD /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				037520CF1DB634FC00CCD4DD /* CHADDViewController.h */,
+				037520D01DB634FC00CCD4DD /* CHADDViewController.m */,
+				037520D11DB634FC00CCD4DD /* CHADDViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		037520B91DB6321400CCD4DD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		037520BA1DB6321400CCD4DD /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		037520C01DB6328400CCD4DD /* 启动图片 */ = {
+			isa = PBXGroup;
+			children = (
+				037520C11DB6328400CCD4DD /* LaunchImage-568h@2x.png */,
+				037520C21DB6328400CCD4DD /* LaunchImage-700-568h@2x.png */,
+				037520C31DB6328400CCD4DD /* LaunchImage-700@2x.png */,
+				037520C41DB6328400CCD4DD /* LaunchImage-800-667h@2x.png */,
+				037520C51DB6328400CCD4DD /* LaunchImage-800-Portrait-736h@3x.png */,
+				037520C61DB6328400CCD4DD /* LaunchImage.png */,
+				037520C71DB6328400CCD4DD /* LaunchImage@2x.png */,
+			);
+			path = "启动图片";
+			sourceTree = "<group>";
+		};
 		03F886BF1DB25C2E003E2778 = {
 			isa = PBXGroup;
 			children = (
 				03F886CA1DB25C2E003E2778 /* BUDEJIE19 */,
 				03F886C91DB25C2E003E2778 /* Products */,
+				D813C6E14B15479A65A853E7 /* Pods */,
+				E3CF3B7FAC0DE5B828254408 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -106,6 +257,7 @@
 			children = (
 				03F886E21DB25EC7003E2778 /* Classes */,
 				03F886D71DB25C2E003E2778 /* Assets.xcassets */,
+				037520A31DB483B500CCD4DD /* login_rgister_textfield_bg.png */,
 				03F886D91DB25C2E003E2778 /* LaunchScreen.storyboard */,
 				03F886DC1DB25C2E003E2778 /* Info.plist */,
 				03F886CB1DB25C2E003E2778 /* Supporting Files */,
@@ -116,6 +268,7 @@
 		03F886CB1DB25C2E003E2778 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				037520C01DB6328400CCD4DD /* 启动图片 */,
 				03F886CC1DB25C2E003E2778 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -124,11 +277,13 @@
 		03F886E21DB25EC7003E2778 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				037520B71DB6321400CCD4DD /* ADD(广告) */,
 				03F887141DB26848003E2778 /* FriendTrend(关注) */,
 				03F886E31DB25EC7003E2778 /* AppDelegate */,
 				03F886E61DB25EC7003E2778 /* Essence(精华) */,
 				03F886EA1DB25EC7003E2778 /* Main(主要) */,
 				03F886EE1DB25EC7003E2778 /* Mine(我的) */,
+				037520841DB3A44400CCD4DD /* Setting(设置) */,
 				03F886F21DB25EC7003E2778 /* New(新帖) */,
 				03F886F61DB25EC7003E2778 /* Other */,
 				03F886F81DB25EC7003E2778 /* Publish(发布) */,
@@ -161,6 +316,8 @@
 				03F887001DB266AE003E2778 /* CHEssenceViewController.h */,
 				03F887011DB266AE003E2778 /* CHEssenceViewController.m */,
 				03F887021DB266AE003E2778 /* CHEssenceViewController.xib */,
+				0375208E1DB3E33600CCD4DD /* CHRecomandViewController.h */,
+				0375208F1DB3E33600CCD4DD /* CHRecomandViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -246,6 +403,10 @@
 		03F886F01DB25EC7003E2778 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				037520AB1DB4C80600CCD4DD /* CHSetiingCellItem.h */,
+				037520AC1DB4C80600CCD4DD /* CHSetiingCellItem.m */,
+				037520B11DB5060F00CCD4DD /* CHCollectionCellItem.h */,
+				037520B21DB5060F00CCD4DD /* CHCollectionCellItem.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -253,6 +414,12 @@
 		03F886F11DB25EC7003E2778 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				0375208B1DB3AB6A00CCD4DD /* CHView.h */,
+				0375208C1DB3AB6A00CCD4DD /* CHView.m */,
+				037520AE1DB4F1CD00CCD4DD /* CHCollectionVCell.h */,
+				037520AF1DB4F1CD00CCD4DD /* CHCollectionVCell.m */,
+				037520B41DB5175D00CCD4DD /* CHCollectionView.h */,
+				037520B51DB5175D00CCD4DD /* CHCollectionView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -307,6 +474,8 @@
 				0375207E1DB27E3E00CCD4DD /* UIView+CHFrame.m */,
 				037520771DB278B300CCD4DD /* UIImage+CHImage.h */,
 				037520781DB278B300CCD4DD /* UIImage+CHImage.m */,
+				037520811DB39E1F00CCD4DD /* UIBarButtonItem+CHBarButtonItem.h */,
+				037520821DB39E1F00CCD4DD /* UIBarButtonItem+CHBarButtonItem.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -361,6 +530,8 @@
 				03F887181DB2685B003E2778 /* CHFriendTrendViewController.h */,
 				03F887191DB2685B003E2778 /* CHFriendTrendViewController.m */,
 				03F8871A1DB2685B003E2778 /* CHFriendTrendViewController.xib */,
+				0375209B1DB4788100CCD4DD /* CHLoginViewController.h */,
+				0375209C1DB4788100CCD4DD /* CHLoginViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -375,8 +546,34 @@
 		03F887171DB26848003E2778 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				037520911DB46DDD00CCD4DD /* CHLoginView.h */,
+				037520921DB46DDD00CCD4DD /* CHLoginView.m */,
+				037520941DB46DEB00CCD4DD /* CHLoginView.xib */,
+				037520961DB474CA00CCD4DD /* CHTextFView.h */,
+				037520971DB474CA00CCD4DD /* CHTextFView.m */,
+				037520991DB474D500CCD4DD /* CHTextFView.xib */,
+				0375209E1DB47EC300CCD4DD /* CHRegistView.h */,
+				0375209F1DB47EC300CCD4DD /* CHRegistView.m */,
+				037520A11DB47ED500CCD4DD /* CHRegistView.xib */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		D813C6E14B15479A65A853E7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				593DC9DE81D9A92AACEA4CF8 /* Pods-BUDEJIE19.debug.xcconfig */,
+				9055BF779293424E6A5E3363 /* Pods-BUDEJIE19.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E3CF3B7FAC0DE5B828254408 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1DEB9B8EA069F238C9B78449 /* libPods-BUDEJIE19.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -386,9 +583,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 03F886DF1DB25C2E003E2778 /* Build configuration list for PBXNativeTarget "BUDEJIE19" */;
 			buildPhases = (
+				0EE8FCC9D1066C377DA61A83 /* [CP] Check Pods Manifest.lock */,
 				03F886C41DB25C2E003E2778 /* Sources */,
 				03F886C51DB25C2E003E2778 /* Frameworks */,
 				03F886C61DB25C2E003E2778 /* Resources */,
+				759B41B1B8C03CE81D164752 /* [CP] Embed Pods Frameworks */,
+				A8B2669B8519BA1A9CDD1CBB /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -437,16 +637,76 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				037520CE1DB6328400CCD4DD /* LaunchImage@2x.png in Resources */,
 				03F8870E1DB266E1003E2778 /* CHNewViewController.xib in Resources */,
+				037520CD1DB6328400CCD4DD /* LaunchImage.png in Resources */,
+				0375209A1DB474D500CCD4DD /* CHTextFView.xib in Resources */,
 				03F886DB1DB25C2E003E2778 /* LaunchScreen.storyboard in Resources */,
 				03F887041DB266AE003E2778 /* CHEssenceViewController.xib in Resources */,
+				037520CA1DB6328400CCD4DD /* LaunchImage-700@2x.png in Resources */,
+				037520D31DB634FC00CCD4DD /* CHADDViewController.xib in Resources */,
 				03F886D81DB25C2E003E2778 /* Assets.xcassets in Resources */,
+				037520A21DB47ED500CCD4DD /* CHRegistView.xib in Resources */,
+				037520951DB46DEB00CCD4DD /* CHLoginView.xib in Resources */,
 				03F8871C1DB2685B003E2778 /* CHFriendTrendViewController.xib in Resources */,
+				037520CB1DB6328400CCD4DD /* LaunchImage-800-667h@2x.png in Resources */,
 				03F887131DB26713003E2778 /* CHPublishViewController.xib in Resources */,
+				037520CC1DB6328400CCD4DD /* LaunchImage-800-Portrait-736h@3x.png in Resources */,
+				037520C91DB6328400CCD4DD /* LaunchImage-700-568h@2x.png in Resources */,
+				037520C81DB6328400CCD4DD /* LaunchImage-568h@2x.png in Resources */,
+				037520A41DB483B500CCD4DD /* login_rgister_textfield_bg.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0EE8FCC9D1066C377DA61A83 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		759B41B1B8C03CE81D164752 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BUDEJIE19/Pods-BUDEJIE19-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A8B2669B8519BA1A9CDD1CBB /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BUDEJIE19/Pods-BUDEJIE19-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		03F886C41DB25C2E003E2778 /* Sources */ = {
@@ -457,18 +717,31 @@
 				0375206D1DB274C800CCD4DD /* CHNewNavigationController.m in Sources */,
 				03F887031DB266AE003E2778 /* CHEssenceViewController.m in Sources */,
 				03F8870D1DB266E1003E2778 /* CHNewViewController.m in Sources */,
+				037520AD1DB4C80600CCD4DD /* CHSetiingCellItem.m in Sources */,
+				037520901DB3E33600CCD4DD /* CHRecomandViewController.m in Sources */,
 				03F886FC1DB25EC7003E2778 /* AppDelegate.m in Sources */,
 				0375207F1DB27E3E00CCD4DD /* UIView+CHFrame.m in Sources */,
 				03F886FF1DB26680003E2778 /* CHTabBarController.m in Sources */,
 				037520791DB278B300CCD4DD /* UIImage+CHImage.m in Sources */,
+				037520931DB46DDD00CCD4DD /* CHLoginView.m in Sources */,
 				037520701DB274F100CCD4DD /* CHFriendTrendNavigationController.m in Sources */,
+				037520831DB39E1F00CCD4DD /* UIBarButtonItem+CHBarButtonItem.m in Sources */,
 				037520761DB275D100CCD4DD /* CHPublishNavigationController.m in Sources */,
+				037520A01DB47EC300CCD4DD /* CHRegistView.m in Sources */,
+				037520981DB474CA00CCD4DD /* CHTextFView.m in Sources */,
+				037520D21DB634FC00CCD4DD /* CHADDViewController.m in Sources */,
 				037520731DB2750000CCD4DD /* CHMineNavigationController.m in Sources */,
+				037520B01DB4F1CD00CCD4DD /* CHCollectionVCell.m in Sources */,
+				0375208D1DB3AB6A00CCD4DD /* CHView.m in Sources */,
+				0375209D1DB4788100CCD4DD /* CHLoginViewController.m in Sources */,
 				03F886CD1DB25C2E003E2778 /* main.m in Sources */,
 				03F887121DB26713003E2778 /* CHPublishViewController.m in Sources */,
 				03F8871B1DB2685B003E2778 /* CHFriendTrendViewController.m in Sources */,
+				037520B61DB5175D00CCD4DD /* CHCollectionView.m in Sources */,
+				037520B31DB5060F00CCD4DD /* CHCollectionCellItem.m in Sources */,
 				0375207C1DB27D1200CCD4DD /* CHTabBar.m in Sources */,
 				0375206A1DB274AF00CCD4DD /* CHEssenceNavigationController.m in Sources */,
+				0375208A1DB3A48700CCD4DD /* CHSettingTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -572,6 +845,7 @@
 		};
 		03F886E01DB25C2E003E2778 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 593DC9DE81D9A92AACEA4CF8 /* Pods-BUDEJIE19.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
@@ -587,6 +861,7 @@
 		};
 		03F886E11DB25C2E003E2778 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9055BF779293424E6A5E3363 /* Pods-BUDEJIE19.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";

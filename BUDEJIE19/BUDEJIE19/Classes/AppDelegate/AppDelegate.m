@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "CHTabBarController.h"
+#import "CHADDViewController.h"
 
 @interface AppDelegate ()
 
@@ -19,8 +20,9 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     //NSLog(@"%@", [NSSearchPathForDirectoriesInDomains(NSLibraryDirectory, NSUserDomainMask, YES) lastObject]);
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
-    CHTabBarController *tabBarVc = [[CHTabBarController alloc] init];
-    self.window.rootViewController = tabBarVc;
+    //CHTabBarController *tabBarVc = [[CHTabBarController alloc] init];
+    CHADDViewController *addVC= [[CHADDViewController alloc] init];
+    self.window.rootViewController = addVC;
     [self.window makeKeyAndVisible];
   
     return YES;

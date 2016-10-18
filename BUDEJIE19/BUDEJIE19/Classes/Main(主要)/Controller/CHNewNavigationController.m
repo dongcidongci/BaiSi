@@ -18,6 +18,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"新帖" image:[UIImage imageWithOriginalMode:@"tabBar_new_icon"] selectedImage:[UIImage imageWithOriginalMode:@"tabBar_new_click_icon"]];
+    
+    NSMutableDictionary *dict = [NSMutableDictionary dictionary];
+    dict[NSFontAttributeName] = [UIFont systemFontOfSize:13];
+    [self.tabBarItem setTitleTextAttributes:dict forState:UIControlStateNormal];
 }
 
 @end

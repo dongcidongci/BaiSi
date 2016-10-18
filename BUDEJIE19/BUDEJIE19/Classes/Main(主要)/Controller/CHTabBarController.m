@@ -17,7 +17,24 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    //添加子控制器
+    [self addChildController];
     
+    CHTabBar *tabBar = [[CHTabBar alloc] init];
+    //设置导航控制器的整体颜色
+    tabBar.tintColor = [UIColor blackColor];
+    //KVC修改属性值
+    [self setValue:tabBar forKeyPath:@"tabBar"];
+    
+    
+    
+    
+    
+    
+    
+}
+#pragma mark- 添加子控制器
+- (void)addChildController{
     NSArray *VCNames = @[
                          @"CHEssenceViewController",
                          @"CHNewViewController",
@@ -37,20 +54,7 @@
         UINavigationController *nav = [[NSClassFromString(navigationVC[i]) alloc] initWithRootViewController:vc];
         [self addChildViewController:nav];
     }
-    
-    CHTabBar *tabBar = [[CHTabBar alloc] init];
-    
-    //设置导航控制器的整体颜色
-    tabBar.tintColor = [UIColor colorWithRed:142 / 225.5  green:142 / 225.5  blue:142 / 225.5  alpha:1];
-    //KVC修改属性值
-    [self setValue:tabBar forKeyPath:@"tabBar"];
-    
-    
-    
-    
-    
 }
-
 
 
 

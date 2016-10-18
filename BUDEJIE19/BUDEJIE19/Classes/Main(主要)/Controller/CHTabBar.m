@@ -15,6 +15,10 @@
 @end
 @implementation CHTabBar
 
+//+ (void)load{
+//    CHTabBar *tabBar = [[CHTabBar alloc] init];
+//    
+//}
 - (UIButton *)button{
     if (_button == nil) {
         UIButton *button = [[UIButton alloc] init];

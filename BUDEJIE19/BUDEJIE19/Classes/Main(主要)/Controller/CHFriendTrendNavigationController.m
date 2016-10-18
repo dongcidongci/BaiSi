@@ -19,6 +19,10 @@
     [super viewDidLoad];
     self.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"关注" image:[UIImage imageWithOriginalMode:@"tabBar_friendTrends_icon"] selectedImage:[UIImage imageWithOriginalMode:@"tabBar_friendTrends_click_icon"]];
     
+    NSMutableDictionary *dict = [NSMutableDictionary dictionary];
+    dict[NSFontAttributeName] = [UIFont systemFontOfSize:13];
+    [self.tabBarItem setTitleTextAttributes:dict forState:UIControlStateNormal];
+    
 }
 
 @end

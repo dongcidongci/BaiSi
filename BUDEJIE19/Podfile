@@ -1,0 +1,8 @@
+
+
+target 'BUDEJIE19' do
+pod 'SDWebImage'
+pod 'AFNetworking'
+pod 'MJRefresh'
+
+end

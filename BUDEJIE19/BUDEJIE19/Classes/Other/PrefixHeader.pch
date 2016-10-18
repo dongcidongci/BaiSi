@@ -8,9 +8,9 @@
 
 #ifdef __OBJC__
 #import "UIView+CHFrame.h"
+#import "UIBarButtonItem+CHBarButtonItem.h"
 
 
 #define CHSCREENW  [UIScreen mainScreen].bounds.size.width
 #define CHSCREENH  [UIScreen mainScreen].bounds.size.height
-
 #endif

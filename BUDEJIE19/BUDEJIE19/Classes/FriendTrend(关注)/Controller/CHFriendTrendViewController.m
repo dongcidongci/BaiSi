@@ -7,6 +7,7 @@
 //
 
 #import "CHFriendTrendViewController.h"
+#import "CHLoginViewController.h"
 
 @interface CHFriendTrendViewController ()
 
@@ -16,12 +17,18 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+    self.navigationItem.leftBarButtonItem = [UIBarButtonItem barButtonCustomViewWithImage:[UIImage imageNamed:@"friendsRecommentIcon"] highLightedImage:[UIImage imageNamed:@"friendsRecommentIcon-click"] title:nil target:self action:@selector(addFriend)];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)addFriend {
+    NSLog(@"点击添加朋友按钮");
+    
+}
+//点击立即登录注册
+- (IBAction)loginRightNow:(UIButton *)sender {
+    CHLoginViewController *loginVC = [[CHLoginViewController alloc] init];
+    [self.navigationController presentViewController:loginVC animated:YES completion:nil];
+    
 }
 
 
