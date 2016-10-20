@@ -1,4 +1,4 @@
-//
+ //
 //  CHNewViewController.m
 //  BUDEJIE19
 //
@@ -7,6 +7,7 @@
 //
 
 #import "CHNewViewController.h"
+#import "CHTagTableViewController.h"
 
 @interface CHNewViewController ()
 
@@ -20,9 +21,13 @@
     //设置TitleView
     self.navigationItem.titleView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"MainTitle"]];
     
+    
 }
 - (void)subMenu{
-    NSLog(@"点击了菜单栏");
+    CHTagTableViewController *tagVC = [[CHTagTableViewController alloc]init];
+    tagVC.hidesBottomBarWhenPushed = YES;
+    [self.navigationController pushViewController:tagVC animated:YES];
 }
+
 
 @end

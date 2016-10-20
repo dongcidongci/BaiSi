@@ -11,7 +11,8 @@
 @interface UIBarButtonItem (CHBarButtonItem)
 
 /**获取UIBarButtonItem (设置图片/文字/监听方法/文字的颜色高亮为红色,默认为黑色)*/
-+ (nullable UIBarButtonItem *)barButtonCustomViewWithImage:(nullable UIImage *)image highLightedImage:(nullable UIImage *) highLightedImage title:(nullable NSString *) title target:(nullable id)target action:(nullable SEL)action;
++ (nonnull instancetype)barButtonCustomViewWithImage:(nullable UIImage *)image highLightedImage:(nullable UIImage *) highLightedImage title:(nullable NSString *) title target:(nullable id)target action:(nullable SEL)action;
 
++ (nonnull instancetype)barButtonCustomViewWithImage:(nullable UIImage *)image selectedImage:(nullable UIImage *) selectedImage title: (nullable NSString *) title target:(nullable id)target action:(nullable SEL)action;
 
 @end

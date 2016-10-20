@@ -12,13 +12,7 @@
 @implementation CHSettingTableViewController
 - (void)viewDidLoad{
     [super viewDidLoad];
-    
-    //设置tintcolor,解决返回的时候蓝色渲染颜色的显示问题
-    self.navigationController.navigationBar.tintColor = [UIColor blackColor];
-    [self addNavigationBar];
-    //self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] init];
-    
-    
+   
     
 }
 #pragma mark - 添加导航控制器的顶部view
@@ -43,8 +37,8 @@
     [self.navigationController popViewControllerAnimated:YES];
     self.navigationController.navigationBar.hidden = NO;
 }
-- (void)viewWillAppear:(BOOL)animated{
-    [super viewWillAppear:animated];
-    self.navigationController.navigationBar.hidden = YES;
-}
+//- (void)viewWillAppear:(BOOL)animated{
+//    [super viewWillAppear:animated];
+//    self.navigationController.navigationBar.hidden = YES;
+//}
 @end

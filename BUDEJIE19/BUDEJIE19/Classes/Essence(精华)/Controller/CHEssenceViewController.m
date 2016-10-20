@@ -17,7 +17,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.navigationController.navigationBar.hidden = NO;
     //添加导航条左边按钮
     self.navigationItem.leftBarButtonItem = [UIBarButtonItem barButtonCustomViewWithImage:[UIImage imageNamed:@"MainTagSubIcon"] highLightedImage:[UIImage imageNamed:@"MainTagSubIconClick"] title:nil target:self action:@selector(suMenu)];
     //添加导航条右边按钮
@@ -29,7 +28,6 @@
 }
 - (void)suMenu{
     CHRecomandViewController *recomandVC = [[CHRecomandViewController alloc] init];
-//    recomandVC.navigationController.navigationBar.hidden = YES;
     [self.navigationController pushViewController:recomandVC animated:YES];
 }
 

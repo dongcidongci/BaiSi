@@ -9,6 +9,7 @@
 #import "CHTextFView.h"
 
 @interface CHTextFView ()
+@property (weak, nonatomic) IBOutlet UIButton *loginBtn;
 @property (weak, nonatomic) IBOutlet UITextField *phoneNO;
 @property (weak, nonatomic) IBOutlet UITextField *pwd;
 
@@ -27,4 +28,12 @@
 - (IBAction)lostPwd:(UIButton *)sender {
     NSLog(@"点击忘记密码按钮");
 }
+
+- (void)awakeFromNib{
+       UIImage *imageBackG = self.loginBtn.currentBackgroundImage;
+      imageBackG = [imageBackG stretchableImageWithLeftCapWidth:imageBackG.size.width * 0.5 topCapHeight:imageBackG.size.height * 0.5];
+        [self.loginBtn setBackgroundImage:imageBackG forState:UIControlStateNormal];
+
+}
+
 @end

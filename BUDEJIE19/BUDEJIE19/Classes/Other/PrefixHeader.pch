@@ -7,10 +7,18 @@
 //
 
 #ifdef __OBJC__
+
 #import "UIView+CHFrame.h"
 #import "UIBarButtonItem+CHBarButtonItem.h"
-
+//基础URL
+#define CHBaseUrl @"http://api.budejie.com/api/api_open.php"
 
 #define CHSCREENW  [UIScreen mainScreen].bounds.size.width
 #define CHSCREENH  [UIScreen mainScreen].bounds.size.height
+
+#define iPhone6P (CHSCREENH == 736)
+#define iPhone6 (CHSCREENH == 667)
+#define iPhone5 (CHSCREENH == 568)
+#define iPhone4 (CHSCREENH == 480)
+
 #endif

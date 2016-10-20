@@ -9,10 +9,5 @@
 #import "CHCollectionCellItem.h"
 
 @implementation CHCollectionCellItem
-+ (instancetype)collectionCellItemDict:(NSDictionary *)dict{
-    
-    CHCollectionCellItem *item = [[CHCollectionCellItem alloc] init];
-    [item setValuesForKeysWithDictionary:dict];
-    return item;
-}
+
 @end

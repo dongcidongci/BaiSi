@@ -1,6 +1,12 @@
 {
   "images" : [
     {
+      "alignment-insets" : {
+        "top" : 0,
+        "left" : 0.5,
+        "bottom" : 0,
+        "right" : 0
+      },
       "idiom" : "universal",
       "filename" : "loginBtnBg.png",
       "scale" : "1x"

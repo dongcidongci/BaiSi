@@ -10,9 +10,9 @@
 
 @interface CHCollectionCellItem : NSObject
 /**主题*/
-@property (nonatomic, strong)NSString *title;
+@property (nonatomic, strong)NSString *name;
 /**图片*/
 @property (nonatomic, strong)NSString *icon;
-/**快速创建模型*/
-+ (instancetype)collectionCellItemDict:(NSDictionary *)dict;
+/**主题链接*/
+@property (nonatomic, strong)NSString *url;
 @end

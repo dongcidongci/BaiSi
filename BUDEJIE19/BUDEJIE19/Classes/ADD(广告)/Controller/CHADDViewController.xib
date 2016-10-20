@@ -9,6 +9,7 @@
             <connections>
                 <outlet property="contentView" destination="pRi-ZK-TcH" id="Obd-VH-YEi"/>
                 <outlet property="laungchImageV" destination="lxn-YX-t2H" id="rN0-by-rfW"/>
+                <outlet property="turnToBtn" destination="epW-k4-WOP" id="ruF-6H-VbA"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -22,27 +23,21 @@
                 </imageView>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pRi-ZK-TcH">
                     <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                    <subviews>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="epW-k4-WOP">
-                            <rect key="frame" x="281" y="36" width="64" height="30"/>
-                            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.48165409479999999" colorSpace="calibratedRGB"/>
-                            <constraints>
-                                <constraint firstAttribute="width" constant="64" id="NhX-gF-dVe"/>
-                                <constraint firstAttribute="height" constant="30" id="nR3-tZ-xsn"/>
-                            </constraints>
-                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                            <state key="normal" title="跳转(3)"/>
-                            <connections>
-                                <action selector="turnToMainVC:" destination="-1" eventType="touchUpInside" id="qKo-Im-eZz"/>
-                            </connections>
-                        </button>
-                    </subviews>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                    <constraints>
-                        <constraint firstAttribute="trailing" secondItem="epW-k4-WOP" secondAttribute="trailing" constant="30" id="NXB-cF-TPa"/>
-                        <constraint firstItem="epW-k4-WOP" firstAttribute="top" secondItem="pRi-ZK-TcH" secondAttribute="top" constant="36" id="tvM-KH-6x3"/>
-                    </constraints>
                 </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="epW-k4-WOP">
+                    <rect key="frame" x="291" y="38" width="64" height="30"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.48165409479999999" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="64" id="6Bk-Hm-IRC"/>
+                        <constraint firstAttribute="height" constant="30" id="b9S-SF-CWf"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="跳转(3)"/>
+                    <connections>
+                        <action selector="turnToMainVC:" destination="-1" eventType="touchUpInside" id="qKo-Im-eZz"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
@@ -52,8 +47,10 @@
                 <constraint firstAttribute="trailing" secondItem="pRi-ZK-TcH" secondAttribute="trailing" id="FOa-bc-28G"/>
                 <constraint firstAttribute="bottom" secondItem="pRi-ZK-TcH" secondAttribute="bottom" id="Gnd-pO-cNE"/>
                 <constraint firstAttribute="bottom" secondItem="lxn-YX-t2H" secondAttribute="bottom" id="Kkp-V3-KjZ"/>
+                <constraint firstItem="epW-k4-WOP" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="38" id="TGG-g8-Xfe"/>
                 <constraint firstItem="pRi-ZK-TcH" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="YPf-2v-Nn0"/>
                 <constraint firstItem="lxn-YX-t2H" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="eJx-Mm-BVL"/>
+                <constraint firstAttribute="trailing" secondItem="epW-k4-WOP" secondAttribute="trailing" constant="20" id="ieq-PS-hoG"/>
             </constraints>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
             <point key="canvasLocation" x="139.5" y="256.5"/>

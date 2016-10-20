@@ -17,8 +17,7 @@
 
 @end
 //collectionViewCell的重用标识
-NSString *ID = @"footer";
-
+ static NSString *ID = @"footer";
 @implementation CHCollectionView
 
 - (UICollectionView *)collectionView{
@@ -27,10 +26,12 @@ NSString *ID = @"footer";
         flowL.itemSize = CGSizeMake(80, 80);
      UICollectionView * collectionV = [[UICollectionView alloc] initWithFrame:self.bounds collectionViewLayout:flowL];
         //collectionV.frame = self.bounds;
-        collectionV.frame = CGRectMake(0, 64, self.width, self.height);
-        collectionV.backgroundColor = [UIColor redColor];
+        collectionV.frame = CGRectMake(0, 0, self.width, self.height);
+        //collectionV.backgroundColor = [UIColor redColor];
         collectionV.delegate = self;
+        collectionV.dataSource = self;
         _collectionView = collectionV;
+        [collectionV registerClass:[CHCollectionVCell class] forCellWithReuseIdentifier:ID];
         [self addSubview:collectionV];
     }
     return _collectionView;
@@ -47,8 +48,9 @@ NSString *ID = @"footer";
 }
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
     
+    
     CHCollectionVCell *cell = [CHCollectionVCell collectionVCellWithCollectionV:collectionView ID:ID forIndexPath:indexPath];
-    cell.backgroundColor = [UIColor whiteColor];
+    cell.backgroundColor = [UIColor redColor];
     cell.cellItem = self.cellItem;
     NSLog(@"cellForItemAtIndexPath");
     return cell;

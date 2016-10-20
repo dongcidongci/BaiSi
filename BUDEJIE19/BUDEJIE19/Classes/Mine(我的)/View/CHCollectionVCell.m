@@ -9,8 +9,10 @@
 #import "CHCollectionVCell.h"
 #import "CHCollectionCellItem.h"
 
+#import <UIImageView+WebCache.h>
+
 @interface CHCollectionVCell ()
-/**<#注释#> */
+/**按钮 */
 @property(weak, nonatomic) UIButton *button;
 @end
 @implementation CHCollectionVCell
@@ -34,8 +36,9 @@
 
 - (void)setCellItem:(CHCollectionCellItem *)cellItem{
     _cellItem = cellItem;
-    self.button.titleLabel.text = self.cellItem.title;
-    self.button.imageView.image = [UIImage imageNamed:self.cellItem.icon];
+    self.button.titleLabel.text = self.cellItem.name;
+    
+   [self.button.imageView sd_setImageWithURL:[NSURL URLWithString:cellItem.icon]];
 }
 
 

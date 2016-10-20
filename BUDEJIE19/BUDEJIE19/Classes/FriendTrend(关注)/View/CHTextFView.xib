@@ -17,7 +17,7 @@
                         <constraint firstAttribute="height" constant="92" id="XaJ-NE-CdH"/>
                     </constraints>
                 </imageView>
-                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="密码" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BHa-YO-i0F">
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="密码" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BHa-YO-i0F" customClass="CHLoginRegistTField">
                     <rect key="frame" x="45" y="80" width="285" height="46"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     <constraints>
@@ -26,12 +26,12 @@
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3MB-cV-BY4" customClass="CHButton">
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3MB-cV-BY4">
                     <rect key="frame" x="45" y="141" width="285" height="30"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="30" id="TIa-tG-0ku"/>
                     </constraints>
-                    <state key="normal" title="登录" backgroundImage="login_register_button">
+                    <state key="normal" title="登录" backgroundImage="loginBtnBg">
                         <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </state>
                     <state key="highlighted" backgroundImage="login_register_button_click"/>
@@ -39,7 +39,7 @@
                         <action selector="loginBtn:" destination="iN0-l3-epB" eventType="touchUpInside" id="1oR-EI-nMe"/>
                     </connections>
                 </button>
-                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="手机号" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="M1r-qL-2AY">
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="手机号" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="M1r-qL-2AY" customClass="CHLoginRegistTField">
                     <rect key="frame" x="45" y="34" width="285" height="46"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     <constraints>
@@ -80,6 +80,7 @@
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
+                <outlet property="loginBtn" destination="3MB-cV-BY4" id="9Gc-6B-oa6"/>
                 <outlet property="phoneNO" destination="M1r-qL-2AY" id="fCp-NG-SNl"/>
                 <outlet property="pwd" destination="BHa-YO-i0F" id="Wyd-nv-OoY"/>
             </connections>
@@ -87,7 +88,7 @@
         </view>
     </objects>
     <resources>
-        <image name="login_register_button" width="87" height="40"/>
+        <image name="loginBtnBg" width="55" height="45"/>
         <image name="login_register_button_click" width="87" height="40"/>
         <image name="login_rgister_textfield_bg" width="266" height="92"/>
     </resources>
