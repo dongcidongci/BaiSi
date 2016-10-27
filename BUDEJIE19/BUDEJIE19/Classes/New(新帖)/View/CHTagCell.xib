@@ -15,7 +15,7 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="63"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="defaultUserIcon" translatesAutoresizingMaskIntoConstraints="NO" id="sxp-D2-iDp">
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="sxp-D2-iDp">
                         <rect key="frame" x="10" y="10" width="43" height="43"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="43" id="uAb-sQ-Jcg"/>
@@ -27,7 +27,7 @@
                             <constraint firstAttribute="height" constant="21" id="OoE-x9-C6N"/>
                         </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WYu-Ha-pYY">
@@ -39,7 +39,7 @@
                         <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kfm-1d-N9a">
+                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kfm-1d-N9a">
                         <rect key="frame" x="222" y="17" width="80" height="30"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="30" id="4F0-UD-pda"/>
@@ -65,12 +65,13 @@
             </tableViewCellContentView>
             <connections>
                 <outlet property="iconImageV" destination="sxp-D2-iDp" id="IyV-jL-ZaX"/>
+                <outlet property="readersLabel" destination="WYu-Ha-pYY" id="Wdg-xm-CjY"/>
+                <outlet property="themeLabel" destination="WYu-Ha-pYY" id="rgm-V8-T1i"/>
             </connections>
             <point key="canvasLocation" x="231" y="264"/>
         </tableViewCell>
     </objects>
     <resources>
-        <image name="defaultUserIcon" width="50" height="50"/>
         <image name="tagButtonBG" width="80" height="31"/>
         <image name="tagButtonBGClick" width="80" height="31"/>
     </resources>

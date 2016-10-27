@@ -45,16 +45,13 @@
     
     
     
-    
-    
-    
-    
 }
 #pragma mark- 添加子控制器
 - (void)addChildController{
     //精华
     CHEssenceViewController *essenceVC = [[CHEssenceViewController alloc] init];
     CHNavigationController *navE = [[CHNavigationController alloc] initWithRootViewController:essenceVC];
+    //设置tabBar的item内容(底部item内容的显示,归当前的导航控制器管理)
     navE.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"精华" image:[UIImage imageWithOriginalMode:@"tabBar_essence_icon"] selectedImage:[UIImage imageWithOriginalMode:@"tabBar_essence_click_icon"]];
     
     [self addChildViewController:navE];
@@ -67,7 +64,6 @@
     [self addChildViewController:navN];
     //发布
     CHEssenceViewController *publishVC = [[CHEssenceViewController alloc] init];
-    //CHNavigationController *navP = [[CHNavigationController alloc] initWithRootViewController:publishVC];
     
     [self addChildViewController:publishVC];
     
@@ -83,10 +79,6 @@
     navM.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"我的" image:[UIImage imageWithOriginalMode:@"tabBar_me_icon"] selectedImage:[UIImage imageWithOriginalMode:@"tabBar_me_click_icon"]];;
     
     [self addChildViewController:navM];
-    
-    
-    
-    
     
     
     /*

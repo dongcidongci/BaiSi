@@ -8,37 +8,51 @@
 
 #import "CHCollectionVCell.h"
 #import "CHCollectionCellItem.h"
+#import "CHButton.h"
 
-#import <UIImageView+WebCache.h>
+#import "UIButton+WebCache.h"
+//#import "SDWebImageDownloader.h"
 
 @interface CHCollectionVCell ()
 /**按钮 */
-@property(weak, nonatomic) UIButton *button;
+@property(weak, nonatomic) CHButton *button;
 @end
 @implementation CHCollectionVCell
 
 - (UIButton *)button{
     if (_button == nil) {
-        UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
-        button.imageEdgeInsets = UIEdgeInsetsMake(-15, 20, 20, 0);
-        button.titleEdgeInsets = UIEdgeInsetsMake(60, -60, 0, 0);
-        button.frame = self.bounds;
+        CHButton *button = [CHButton buttonWithType:UIButtonTypeCustom];
+        button.enabled = NO;
+        button.adjustsImageWhenDisabled = NO;
+        [button setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+         button.frame = self.bounds;
+        button.titleLabel.textAlignment = NSTextAlignmentCenter;
         [self addSubview:button];
         _button = button;
     }
     return _button;
 }
+
 + (instancetype)collectionVCellWithCollectionV:(UICollectionView *)view ID:(NSString *)ID forIndexPath:(NSIndexPath *)indexPath{
     CHCollectionVCell *cell = [view dequeueReusableCellWithReuseIdentifier:ID forIndexPath:indexPath];
-    //cell.backgroundColor = [UIColor redColor];
     return cell;
 }
 
 - (void)setCellItem:(CHCollectionCellItem *)cellItem{
     _cellItem = cellItem;
-    self.button.titleLabel.text = self.cellItem.name;
-    
-   [self.button.imageView sd_setImageWithURL:[NSURL URLWithString:cellItem.icon]];
+    //Button的内容,一定记住要用set方法来设置,不能用.语法
+    [self.button setTitle:cellItem.name forState:UIControlStateNormal];
+    [self.button sd_setImageWithURL:[NSURL URLWithString:cellItem.icon] forState:UIControlStateNormal];
+//    [[SDWebImageDownloader sharedDownloader] downloadImageWithURL:[NSURL URLWithString:cellItem.icon] options:0 progress:nil completed:^(UIImage *image, NSData *data, NSError *error, BOOL finished) {
+//        
+//        //需要做线程间通信！！！
+//        [[NSOperationQueue mainQueue] addOperationWithBlock:^{
+//            //data 图片的二进制数据
+//            [self.button setImage:image forState:UIControlStateNormal];
+//        }];
+//        
+//    }];
+
 }
 
 

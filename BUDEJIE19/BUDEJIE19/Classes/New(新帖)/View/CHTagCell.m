@@ -7,9 +7,13 @@
 //
 
 #import "CHTagCell.h"
+#import "CHTagItem.h"
+#import <UIImageView+WebCache.h>
 
 @interface CHTagCell ()
+@property (weak, nonatomic) IBOutlet UILabel *themeLabel;
 @property (weak, nonatomic) IBOutlet UIImageView *iconImageV;
+@property (weak, nonatomic) IBOutlet UILabel *readersLabel;
 
 @end
 @implementation CHTagCell
@@ -33,5 +37,21 @@
     
     [super setFrame:frame];
 }
-
+- (void)setTagItem:(CHTagItem *)tagItem{
+    _tagItem = tagItem;
+    self.themeLabel.text = tagItem.theme_name;
+    NSInteger numbers = [tagItem.sub_number integerValue];
+    NSString *str = nil;
+    if (numbers > 10000) {
+       CGFloat nums = numbers / 10000.0;
+        str = [NSString stringWithFormat:@"%.1lf万",nums];
+    }else{
+        str = [NSString stringWithFormat:@"%ld",numbers];
+    }
+    if([str containsString:@".0"]){
+       str = [str stringByReplacingOccurrencesOfString:@".0" withString:@""];
+    };
+    self.readersLabel.text = str;
+    [self.iconImageV sd_setImageWithURL:[NSURL URLWithString:tagItem.image_list] placeholderImage:[UIImage imageNamed:@"defaultUserIcon"]];
+}
 @end

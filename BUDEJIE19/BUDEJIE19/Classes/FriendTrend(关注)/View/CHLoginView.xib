@@ -41,12 +41,8 @@
                             <nil key="highlightedColor"/>
                         </label>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M87-a7-ziW">
-                            <rect key="frame" x="0.0" y="46" width="116" height="104"/>
-                            <constraints>
-                                <constraint firstAttribute="width" constant="116" id="9Ac-Sn-pMn"/>
-                                <constraint firstAttribute="height" constant="104" id="xkk-vJ-yWP"/>
-                            </constraints>
-                            <inset key="titleEdgeInsets" minX="-60" minY="70" maxX="0.0" maxY="0.0"/>
+                            <rect key="frame" x="0.0" y="50" width="125" height="100"/>
+                            <inset key="titleEdgeInsets" minX="-90" minY="70" maxX="0.0" maxY="0.0"/>
                             <inset key="imageEdgeInsets" minX="20" minY="-15" maxX="0.0" maxY="20"/>
                             <state key="normal" title="QQ登录" image="login_QQ_icon"/>
                             <state key="highlighted" image="login_QQ_icon_click"/>
@@ -55,8 +51,8 @@
                             </connections>
                         </button>
                         <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F7D-F4-Fpe">
-                            <rect key="frame" x="129" y="46" width="116" height="104"/>
-                            <inset key="titleEdgeInsets" minX="-60" minY="70" maxX="0.0" maxY="0.0"/>
+                            <rect key="frame" x="125" y="50" width="125" height="100"/>
+                            <inset key="titleEdgeInsets" minX="-90" minY="70" maxX="0.0" maxY="0.0"/>
                             <inset key="imageEdgeInsets" minX="20" minY="-15" maxX="0.0" maxY="20"/>
                             <state key="normal" title="微博登录" image="login_sina_icon"/>
                             <state key="highlighted" image="login_sina_icon_click"/>
@@ -65,12 +61,11 @@
                             </connections>
                         </button>
                         <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P9f-6U-DrH">
-                            <rect key="frame" x="253" y="46" width="116" height="104"/>
+                            <rect key="frame" x="250" y="50" width="125" height="100"/>
                             <constraints>
-                                <constraint firstAttribute="width" constant="116" id="HKp-YE-Kqz"/>
-                                <constraint firstAttribute="height" constant="104" id="JmC-l7-7oN"/>
+                                <constraint firstAttribute="height" constant="100" id="JdO-dj-4DE"/>
                             </constraints>
-                            <inset key="titleEdgeInsets" minX="-60" minY="70" maxX="0.0" maxY="0.0"/>
+                            <inset key="titleEdgeInsets" minX="-90" minY="70" maxX="0.0" maxY="0.0"/>
                             <inset key="imageEdgeInsets" minX="20" minY="-15" maxX="0.0" maxY="20"/>
                             <state key="normal" title="腾出微博" image="login_tecent_icon"/>
                             <state key="highlighted" image="login_tecent_icon_click"/>
@@ -80,19 +75,22 @@
                         </button>
                     </subviews>
                     <constraints>
-                        <constraint firstItem="F7D-F4-Fpe" firstAttribute="height" secondItem="M87-a7-ziW" secondAttribute="height" id="0iE-vw-20V"/>
-                        <constraint firstItem="M87-a7-ziW" firstAttribute="leading" secondItem="ks4-mV-UmQ" secondAttribute="leading" id="3eA-a8-Gja"/>
-                        <constraint firstItem="F7D-F4-Fpe" firstAttribute="width" secondItem="M87-a7-ziW" secondAttribute="width" id="8x6-4v-OIk"/>
-                        <constraint firstAttribute="trailing" secondItem="P9f-6U-DrH" secondAttribute="trailing" constant="6" id="Ew7-uu-c0E"/>
+                        <constraint firstAttribute="bottom" secondItem="M87-a7-ziW" secondAttribute="bottom" constant="10" id="AGQ-Od-BRd"/>
+                        <constraint firstItem="M87-a7-ziW" firstAttribute="leading" secondItem="ks4-mV-UmQ" secondAttribute="leading" id="D36-nb-MPx"/>
+                        <constraint firstItem="F7D-F4-Fpe" firstAttribute="leading" secondItem="M87-a7-ziW" secondAttribute="trailing" id="Nug-A3-u94"/>
                         <constraint firstItem="Bei-XC-iyK" firstAttribute="top" secondItem="ks4-mV-UmQ" secondAttribute="top" constant="8" id="RSb-bG-5Ku"/>
-                        <constraint firstItem="F7D-F4-Fpe" firstAttribute="leading" secondItem="M87-a7-ziW" secondAttribute="trailing" constant="13" id="UBr-jn-oeJ"/>
-                        <constraint firstAttribute="bottom" secondItem="P9f-6U-DrH" secondAttribute="bottom" constant="10" id="gRQ-m1-0Xz"/>
-                        <constraint firstAttribute="bottom" secondItem="M87-a7-ziW" secondAttribute="bottom" constant="10" id="k5w-nq-Tnj"/>
-                        <constraint firstItem="F7D-F4-Fpe" firstAttribute="bottom" secondItem="M87-a7-ziW" secondAttribute="bottom" id="mVj-jE-Ork"/>
+                        <constraint firstItem="M87-a7-ziW" firstAttribute="height" secondItem="P9f-6U-DrH" secondAttribute="height" id="X6v-v6-fTg"/>
+                        <constraint firstItem="P9f-6U-DrH" firstAttribute="width" secondItem="M87-a7-ziW" secondAttribute="width" id="XiR-mk-dtl"/>
                         <constraint firstAttribute="bottom" secondItem="Bei-XC-iyK" secondAttribute="bottom" constant="131" id="mc4-8X-Wek"/>
                         <constraint firstAttribute="height" constant="160" id="mgd-S0-LMl"/>
+                        <constraint firstItem="P9f-6U-DrH" firstAttribute="leading" secondItem="F7D-F4-Fpe" secondAttribute="trailing" id="oub-8t-JA6"/>
+                        <constraint firstAttribute="bottom" secondItem="P9f-6U-DrH" secondAttribute="bottom" constant="10" id="rF8-Bw-TcT"/>
                         <constraint firstAttribute="trailing" secondItem="Bei-XC-iyK" secondAttribute="trailing" constant="154" id="rKN-Hd-F7d"/>
+                        <constraint firstItem="F7D-F4-Fpe" firstAttribute="height" secondItem="P9f-6U-DrH" secondAttribute="height" id="s2G-iF-zt3"/>
                         <constraint firstItem="Bei-XC-iyK" firstAttribute="leading" secondItem="ks4-mV-UmQ" secondAttribute="leading" constant="153" id="urA-Ah-Sy4"/>
+                        <constraint firstItem="F7D-F4-Fpe" firstAttribute="width" secondItem="M87-a7-ziW" secondAttribute="width" id="uu4-zO-nMP"/>
+                        <constraint firstAttribute="bottom" secondItem="F7D-F4-Fpe" secondAttribute="bottom" constant="10" id="w1h-I7-U41"/>
+                        <constraint firstAttribute="trailing" secondItem="P9f-6U-DrH" secondAttribute="trailing" id="wU4-jF-Zcl"/>
                     </constraints>
                 </view>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S9H-A4-2JO">

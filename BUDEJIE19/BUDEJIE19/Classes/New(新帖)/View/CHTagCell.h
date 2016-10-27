@@ -7,8 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+@class CHTagItem;
 
 @interface CHTagCell : UITableViewCell
+/**<#注释#>*/
+@property (nonatomic, strong)CHTagItem *tagItem;
 /**创建CHTagCell*/
 + (instancetype)tagCell;
 @end

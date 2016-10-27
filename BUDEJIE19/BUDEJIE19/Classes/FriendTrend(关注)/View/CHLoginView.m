@@ -28,7 +28,8 @@
     self.scrollerView.pagingEnabled = YES;
     
     CHTextFView *textFView = [CHTextFView textFView];
-    textFView.frame = self.scrollerView.bounds;
+    //textFView.frame = self.scrollerView.bounds;
+    textFView.frame = CGRectMake(0, 0, self.scrollerView.width, self.scrollerView.height);
     [self.scrollerView addSubview:textFView];
     CHRegistView *textFView2 = [CHRegistView registView];
     textFView2.frame = self.scrollerView.bounds;

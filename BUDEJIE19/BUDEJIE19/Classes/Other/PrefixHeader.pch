@@ -9,6 +9,8 @@
 #ifdef __OBJC__
 
 #import "UIView+CHFrame.h"
+#import "UIImage+CHImage.h"
+#import "AFHTTPSessionManager+CHHTTPSessionManager.h"
 #import "UIBarButtonItem+CHBarButtonItem.h"
 //基础URL
 #define CHBaseUrl @"http://api.budejie.com/api/api_open.php"
@@ -21,4 +23,5 @@
 #define iPhone5 (CHSCREENH == 568)
 #define iPhone4 (CHSCREENH == 480)
 
+#define CHColor(r,g,b) [UIColor colorWithRed:(r) / 255.0 green:(g) / 255.0 blue:(b) / 255.0 alpha:1]
 #endif
