@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CHVideoViewController : UITableViewController
+#import "CHMainViewController.h"
+
+@interface CHVideoViewController : CHMainViewController
 
 @end

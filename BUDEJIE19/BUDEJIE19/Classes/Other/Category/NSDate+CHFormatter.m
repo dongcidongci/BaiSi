@@ -12,20 +12,18 @@
 
 - (BOOL)isThisYear{
     
-    //NSFormatter *formatter = [[NSFormatter alloc] init];
-    
-    //NSDate *date = nil;
-    
     //获取日历对象
     NSCalendar *calendar = [NSCalendar currentCalendar];
     
     //获取指定时间的年份
    NSDateComponents *dateC = [calendar components:NSCalendarUnitYear fromDate:self];
+    //NSLog(@"self%@",self);
     NSDate *date_now = [NSDate date];
     NSDateComponents *date_now_C = [calendar components:NSCalendarUnitYear fromDate:date_now];
-    if (dateC.year == date_now_C.year) {
-        return YES;
-    }else return NO;
+    
+    if (dateC.year == date_now_C.year) return YES;
+
+    return NO;
 }
 - (BOOL)isThisToday{
     //获取日历对象

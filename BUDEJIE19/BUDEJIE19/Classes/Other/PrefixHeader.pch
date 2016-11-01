@@ -12,8 +12,10 @@
 #import "UIImage+CHImage.h"
 #import "AFHTTPSessionManager+CHHTTPSessionManager.h"
 #import "UIBarButtonItem+CHBarButtonItem.h"
-//基础URL
+//网络请求基础URL
 #define CHBaseUrl @"http://api.budejie.com/api/api_open.php"
+//沙盒缓存文件夹路径
+#define CachePath [NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) lastObject]
 
 #define CHSCREENW  [UIScreen mainScreen].bounds.size.width
 #define CHSCREENH  [UIScreen mainScreen].bounds.size.height

@@ -66,7 +66,7 @@
             <connections>
                 <outlet property="iconImageV" destination="sxp-D2-iDp" id="IyV-jL-ZaX"/>
                 <outlet property="readersLabel" destination="WYu-Ha-pYY" id="Wdg-xm-CjY"/>
-                <outlet property="themeLabel" destination="WYu-Ha-pYY" id="rgm-V8-T1i"/>
+                <outlet property="themeLabel" destination="Y54-oc-sUT" id="Nri-kd-siI"/>
             </connections>
             <point key="canvasLocation" x="231" y="264"/>
         </tableViewCell>

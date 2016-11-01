@@ -45,6 +45,8 @@ typedef enum : NSUInteger {
 @property(nonatomic, assign, getter=isBigPhoto)BOOL bigPhoto;
 /**数据的类型枚举*/
 @property(nonatomic, assign)CHTopicType type;
+/**沙盒里面保存的大图片*/
+@property (nonatomic, strong)UIImage *bigImage;
 
 /**
  *音频段子

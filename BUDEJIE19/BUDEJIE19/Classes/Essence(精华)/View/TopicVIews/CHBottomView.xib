@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="CHBottomView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mhq-Ce-Zdw" userLabel="赞">
+                    <rect key="frame" x="0.0" y="15" width="94" height="20"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" title="赞" image="mainCellDing">
+                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="dingBtnClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="Qqa-26-ENp"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y3J-aJ-FQ2" userLabel="评论">
+                    <rect key="frame" x="281" y="15" width="94" height="20"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" title="评论" image="mainCellComment">
+                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="commentBtnClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="ThT-3j-itA"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dqt-Gd-bfr" userLabel="分享">
+                    <rect key="frame" x="188" y="15" width="93" height="20"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" title="分享" image="mainCellShare">
+                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="shareBtnClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="R5l-kT-qS3"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wxz-pU-eY3" userLabel="踩">
+                    <rect key="frame" x="94" y="15" width="94" height="20"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" title="踩" image="mainCellCai">
+                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="caiBtnClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="nVc-ff-xe2"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="wxz-pU-eY3" firstAttribute="bottom" secondItem="Mhq-Ce-Zdw" secondAttribute="bottom" id="0rI-UP-4H9"/>
+                <constraint firstItem="wxz-pU-eY3" firstAttribute="width" secondItem="Mhq-Ce-Zdw" secondAttribute="width" id="4xn-aA-kx4"/>
+                <constraint firstItem="Dqt-Gd-bfr" firstAttribute="bottom" secondItem="Mhq-Ce-Zdw" secondAttribute="bottom" id="65g-rm-zIs"/>
+                <constraint firstItem="Dqt-Gd-bfr" firstAttribute="width" secondItem="Mhq-Ce-Zdw" secondAttribute="width" id="8jc-Gr-nN8"/>
+                <constraint firstItem="wxz-pU-eY3" firstAttribute="top" secondItem="Mhq-Ce-Zdw" secondAttribute="top" id="Aof-Fh-3o2"/>
+                <constraint firstItem="y3J-aJ-FQ2" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="B7I-WI-SWU"/>
+                <constraint firstItem="Dqt-Gd-bfr" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="BYa-kH-F1V"/>
+                <constraint firstItem="Mhq-Ce-Zdw" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="D65-Q8-uOF"/>
+                <constraint firstItem="y3J-aJ-FQ2" firstAttribute="top" secondItem="Mhq-Ce-Zdw" secondAttribute="top" id="Ujd-X3-mo4"/>
+                <constraint firstItem="wxz-pU-eY3" firstAttribute="leading" secondItem="Mhq-Ce-Zdw" secondAttribute="trailing" id="bEb-xT-c00"/>
+                <constraint firstItem="Mhq-Ce-Zdw" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="bFs-1l-3ur"/>
+                <constraint firstItem="y3J-aJ-FQ2" firstAttribute="bottom" secondItem="Mhq-Ce-Zdw" secondAttribute="bottom" id="d3f-7F-9tt"/>
+                <constraint firstItem="y3J-aJ-FQ2" firstAttribute="leading" secondItem="Dqt-Gd-bfr" secondAttribute="trailing" id="dHv-4F-pkS"/>
+                <constraint firstItem="y3J-aJ-FQ2" firstAttribute="leading" secondItem="Dqt-Gd-bfr" secondAttribute="trailing" id="fA3-SZ-1gX"/>
+                <constraint firstItem="wxz-pU-eY3" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="fku-ij-Cly"/>
+                <constraint firstItem="y3J-aJ-FQ2" firstAttribute="width" secondItem="Mhq-Ce-Zdw" secondAttribute="width" id="jba-NK-koR"/>
+                <constraint firstItem="Dqt-Gd-bfr" firstAttribute="leading" secondItem="wxz-pU-eY3" secondAttribute="trailing" id="qHM-IW-yJS"/>
+                <constraint firstAttribute="trailing" secondItem="y3J-aJ-FQ2" secondAttribute="trailing" id="srI-A3-nbl"/>
+                <constraint firstItem="Dqt-Gd-bfr" firstAttribute="leading" secondItem="wxz-pU-eY3" secondAttribute="trailing" id="tJk-iS-JXg"/>
+                <constraint firstItem="Dqt-Gd-bfr" firstAttribute="top" secondItem="Mhq-Ce-Zdw" secondAttribute="top" id="tid-KD-cHf"/>
+                <constraint firstItem="wxz-pU-eY3" firstAttribute="leading" secondItem="Mhq-Ce-Zdw" secondAttribute="trailing" id="uff-Jl-Q79"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="caiBtn" destination="wxz-pU-eY3" id="DlW-3w-yaT"/>
+                <outlet property="commentBtn" destination="y3J-aJ-FQ2" id="Pm6-Sl-w2v"/>
+                <outlet property="dingBtn" destination="Mhq-Ce-Zdw" id="x4w-nj-9Hh"/>
+                <outlet property="shareBtn" destination="Dqt-Gd-bfr" id="hTj-5C-Bj0"/>
+            </connections>
+            <point key="canvasLocation" x="486.5" y="173"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="mainCellCai" width="20" height="20"/>
+        <image name="mainCellComment" width="20" height="20"/>
+        <image name="mainCellDing" width="20" height="20"/>
+        <image name="mainCellShare" width="20" height="20"/>
+    </resources>
+</document>

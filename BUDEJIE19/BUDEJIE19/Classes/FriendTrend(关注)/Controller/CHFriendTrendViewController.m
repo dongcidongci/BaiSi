@@ -8,7 +8,7 @@
 
 #import "CHFriendTrendViewController.h"
 #import "CHLoginViewController.h"
-
+#import "CHSortViewController.h"
 @interface CHFriendTrendViewController ()
 
 @end
@@ -21,8 +21,8 @@
 }
 
 - (void)addFriend {
-    NSLog(@"点击添加朋友按钮");
-    
+    CHSortViewController *sortVc = [[CHSortViewController alloc] init];
+    [self.navigationController pushViewController:sortVc animated:YES];
 }
 //点击立即登录注册
 - (IBAction)loginRightNow:(UIButton *)sender {

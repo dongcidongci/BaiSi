@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CHVoiceViewController : UITableViewController
+#import "CHMainViewController.h"
+
+@interface CHVoiceViewController : CHMainViewController
 
 @end

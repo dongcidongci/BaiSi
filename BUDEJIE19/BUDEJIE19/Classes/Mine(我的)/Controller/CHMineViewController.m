@@ -168,13 +168,6 @@
     
 }
 
-//- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
-//    if (section == 1) {
-//        
-//        return 20;
-//    }else
-//        return 0;
-//}
 - (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section{
     return 15;
 }
@@ -197,7 +190,6 @@
     //注册collectionV的重用cell
     [collectionV registerClass:[CHCollectionVCell class] forCellWithReuseIdentifier:ID];
     collectionV.backgroundColor = [UIColor clearColor];
-        //collectionV.contentInset = UIEdgeInsetsMake(20, 0, 0, 0);
         collectionV.scrollEnabled = NO;
     self.collectionV = collectionV;
     collectionV;

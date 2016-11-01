@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CHPhotoViewController : UITableViewController
+#import "CHMainViewController.h"
+
+@interface CHPhotoViewController : CHMainViewController
 
 @end

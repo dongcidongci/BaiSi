@@ -11,7 +11,7 @@
 #import <UIImageView+WebCache.h>
 #import <SVProgressHUD.h>
 #import <Photos/Photos.h>
-@interface CHBigPhotoViewController ()
+@interface CHBigPhotoViewController ()<UIScrollViewDelegate>
 @property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
 /**<#注释#> */
 @property(weak, nonatomic) UIImageView *imageView;
@@ -27,15 +27,25 @@
     CGFloat height = CHSCREENW / self.allItem.width * self.allItem.height;
     //imageView.backgroundColor = [UIColor redColor];
     imageView.frame = CGRectMake(0, 0, CHSCREENW,height);
+    //如果内存缓存里面有处理过的图片,先用这个图片
+    if (self.allItem.bigImage) {
+        imageView.image = self.allItem.bigImage;
+    }else{
+        //没有图片,再按照正常情况去加载图片
     [imageView sd_setImageWithURL:[NSURL URLWithString:self.allItem.image0]];
+    }
     [self.scrollView addSubview:imageView];
     self.imageView = imageView;
     self.scrollView.contentSize = CGSizeMake(0, height);
     if (!self.allItem.isBigPhoto) {
         imageView.center = CGPointMake(CHSCREENW * 0.5, CHSCREENH * 0.5);
     }
-    //self.imageView.image = self.bigImage;
+    self.scrollView.delegate = self;
+  CGFloat scale = CHSCREENW/self.allItem.width * self.allItem.height;
+    self.scrollView.maximumZoomScale = scale;
     
+   
+
 }
 #pragma mark - 返回
 - (IBAction)back:(UIButton *)sender {
@@ -111,5 +121,15 @@
     return nil;
 
 }
+#pragma mark - UIScrollViewDelegate
+- (UIView *)viewForZoomingInScrollView:(UIScrollView *)scrollView{
+    return self.imageView;
+}
+
+
+
+
+
+
 
 @end

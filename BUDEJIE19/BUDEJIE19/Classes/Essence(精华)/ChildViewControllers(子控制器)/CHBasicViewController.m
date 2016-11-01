@@ -49,7 +49,7 @@ static NSString * const ID = @"essenceCell";
 }
 #pragma mark - 顶部的视图
 - (void)addTopView{
-    CGFloat y = self.navigationController.navigationBar.hidden==YES?20:64;
+    CGFloat y = self.navigationController.navigationBarHidden==YES?20:64;
     UIScrollView *topView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, y, CHSCREENW, 35)];
     //NSLog(@"y%lf", y);
     topView.backgroundColor = [UIColor colorWithWhite:1 alpha:0.6];
@@ -118,7 +118,9 @@ static NSString * const ID = @"essenceCell";
 - (void)titleBtnClick:(UIButton *)btn{
     [self selectedButton:btn];
     self.collectionView.contentOffset =CGPointMake(btn.tag * CHSCREENW, 0) ;
-    
+    //发通知(nil表示匿名通知,titleClick是通知的名)
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"titleClick" object:nil];
+    //NSLog(@"%s", __func__);
 }
 #pragma mark -UICollectionViewDataSource
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{
@@ -132,16 +134,17 @@ static NSString * const ID = @"essenceCell";
     //tableView的y值默认是20,需求的0,所以得修改y值为0
     
     vc.tableView.frame = [UIScreen mainScreen].bounds;
-    vc.tableView.contentInset = UIEdgeInsetsMake(CGRectGetMaxY(self.topScrollV.frame) + 20, 0, 49, 0);
+    //vc.tableView.contentInset = UIEdgeInsetsMake(CGRectGetMaxY(self.topScrollV.frame) + 20, 0, 49, 0);
+    vc.tableView.contentInset = UIEdgeInsetsMake(64 + self.topScrollV.height, 0, 49, 0);
     [cell.contentView addSubview:vc.view];
-    
+    //NSLog(@"top%lf,%@", vc.tableView.contentInset.top, NSStringFromCGRect(vc.tableView.frame));
     //cell.backgroundColor = CHColor(arc4random_uniform(256), arc4random_uniform(256), arc4random_uniform(256));
     return cell;
 }
 #pragma mark - UICollectionViewDelegate
-- (void)scrollViewDidScroll:(UIScrollView *)scrollView{
-    
-}
+//- (void)scrollViewDidScroll:(UIScrollView *)scrollView{
+//    
+//}
 - (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView{
     NSInteger page = scrollView.contentOffset.x / CHSCREENW;
     [self selectedButton:self.btnArray[page]];

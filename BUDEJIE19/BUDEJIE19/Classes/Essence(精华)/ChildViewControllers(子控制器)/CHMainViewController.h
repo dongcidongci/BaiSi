@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "CHAllItem.h"
 @interface CHMainViewController : UITableViewController
-
+/**数据类型*/
+@property (nonatomic, assign) CHTopicType type;
 @end

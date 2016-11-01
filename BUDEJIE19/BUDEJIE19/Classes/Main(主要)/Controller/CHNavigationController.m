@@ -46,11 +46,10 @@
 }
 #pragma mark - 代理决定 根控制器pan手势就不能接收点击
 - (BOOL)gestureRecognizerShouldBegin:(UIGestureRecognizer *)gestureRecognizer{
-    if (self.childViewControllers.count > 0) {
-        return YES;
-    }else{
-        return NO;
-    }
+    if (self.childViewControllers.count > 0) return YES;
+  
+    return NO;
+   
 }
 //init方法底层会来调用push方法,把控制器进行 入栈 操作
 - (void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated{

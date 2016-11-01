@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="CHTopCommtentView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="最热评论" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xuU-kq-Nzy">
+                    <rect key="frame" x="0.0" y="0.0" width="56" height="17"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FIj-xT-Xp5" userLabel="文字评论">
+                    <rect key="frame" x="0.0" y="22" width="375" height="18"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OmB-F4-i67" userLabel="用户名+语音(view)">
+                    <rect key="frame" x="0.0" y="22" width="375" height="22"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="旧游" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8wE-6U-P5A">
+                            <rect key="frame" x="0.0" y="0.0" width="30" height="22"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="22" id="fLd-6Z-E88"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="24f-sf-hgg">
+                            <rect key="frame" x="35" y="0.0" width="62" height="22"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="22" id="x78-wf-iep"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <state key="normal" title="17″" backgroundImage="play-voice-bgN">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <state key="selected" image="play-voice-bg-select"/>
+                            <connections>
+                                <action selector="playVoiceBtnClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="cwS-br-fpZ"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="8wE-6U-P5A" firstAttribute="leading" secondItem="OmB-F4-i67" secondAttribute="leading" id="4ZG-Du-Kbi"/>
+                        <constraint firstItem="24f-sf-hgg" firstAttribute="height" secondItem="8wE-6U-P5A" secondAttribute="height" id="Ef8-Dl-QeO"/>
+                        <constraint firstAttribute="height" constant="22" id="ckC-EX-vOS"/>
+                        <constraint firstItem="24f-sf-hgg" firstAttribute="leading" secondItem="8wE-6U-P5A" secondAttribute="trailing" constant="5" id="fOC-8h-gKD"/>
+                        <constraint firstItem="24f-sf-hgg" firstAttribute="centerY" secondItem="OmB-F4-i67" secondAttribute="centerY" id="h3M-8e-cLA"/>
+                        <constraint firstItem="8wE-6U-P5A" firstAttribute="centerY" secondItem="OmB-F4-i67" secondAttribute="centerY" id="mVG-on-65r"/>
+                        <constraint firstItem="24f-sf-hgg" firstAttribute="leading" secondItem="8wE-6U-P5A" secondAttribute="trailing" constant="5" id="vTE-EG-Hm2"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="OmB-F4-i67" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="9q9-cX-9JZ"/>
+                <constraint firstItem="FIj-xT-Xp5" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="H1P-vF-Ddu"/>
+                <constraint firstAttribute="trailing" secondItem="OmB-F4-i67" secondAttribute="trailing" constant="135" id="Ohd-Uj-Zxc"/>
+                <constraint firstItem="xuU-kq-Nzy" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="QIt-ob-fO9"/>
+                <constraint firstAttribute="trailing" secondItem="FIj-xT-Xp5" secondAttribute="trailing" id="Vyt-Us-1HX"/>
+                <constraint firstItem="FIj-xT-Xp5" firstAttribute="top" secondItem="xuU-kq-Nzy" secondAttribute="bottom" constant="5" id="X4b-PD-WXq"/>
+                <constraint firstItem="xuU-kq-Nzy" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="bXb-b4-jhs"/>
+                <constraint firstAttribute="trailing" secondItem="OmB-F4-i67" secondAttribute="trailing" id="bj9-7S-Z75"/>
+                <constraint firstItem="OmB-F4-i67" firstAttribute="top" secondItem="xuU-kq-Nzy" secondAttribute="bottom" constant="5" id="kGc-Xv-QPQ"/>
+                <constraint firstItem="OmB-F4-i67" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="kpS-bo-zuf"/>
+                <constraint firstItem="OmB-F4-i67" firstAttribute="top" secondItem="xuU-kq-Nzy" secondAttribute="bottom" constant="5" id="lJv-N2-ORj"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="Ohd-Uj-Zxc"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="contentView" destination="OmB-F4-i67" id="spz-Y5-grV"/>
+                <outlet property="textLabel" destination="FIj-xT-Xp5" id="qdN-dh-Kda"/>
+                <outlet property="usernameLabel" destination="8wE-6U-P5A" id="TI7-1p-dc5"/>
+                <outlet property="voiceLengthBtn" destination="24f-sf-hgg" id="mz6-7m-eVF"/>
+            </connections>
+            <point key="canvasLocation" x="284.5" y="131"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="play-voice-bg-select" width="74" height="24"/>
+        <image name="play-voice-bgN" width="62" height="22"/>
+    </resources>
+</document>

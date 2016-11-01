@@ -10,6 +10,8 @@
 #import "CHRecomandViewController.h"
 
 #import "CHMainViewController.h"
+
+#import "CHAllTopicViewController.h"
 #import "CHVideoViewController.h"
 #import "CHVoiceViewController.h"
 #import "CHPhotoViewController.h"
@@ -46,9 +48,10 @@
 
 - (void)addChildViewControllers{
     //全部
-    CHMainViewController *mainVc = [[CHMainViewController alloc] init];
-    mainVc.title = @"全部";
-    [self addChildViewController:mainVc];
+    //CHMainViewController *mainVc = [[CHMainViewController alloc] init];
+    CHAllTopicViewController *allTopicVC = [[CHAllTopicViewController alloc] init];
+    allTopicVC.title = @"全部";
+    [self addChildViewController:allTopicVC];
     //视频
     CHVideoViewController *videoVc = [[CHVideoViewController alloc] init];
     videoVc.title = @"视频";

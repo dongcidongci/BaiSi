@@ -9,9 +9,10 @@
 #import "AppDelegate.h"
 #import "CHTabBarController.h"
 #import "CHADDViewController.h"
-
+#import "CHTopWindow.h"
 @interface AppDelegate ()
-
+/**<#注释#>*/
+//@property (nonatomic, strong)UIWindow *myWindow;
 @end
 
 @implementation AppDelegate
@@ -26,7 +27,25 @@
     //self.window.rootViewController = addVC;
     self.window.rootViewController = tabBarVc;
     [self.window makeKeyAndVisible];
-  
+    
+    //创建一个窗口,添加到最上面显示
+//    UIViewController *vc = [[UIViewController alloc] init];
+//    UIWindow *window = [[UIWindow alloc] init];
+//    window.rootViewController = vc;
+//    window.frame = CGRectMake(0, 0, CHSCREENW, 20);
+//    window.backgroundColor = [UIColor clearColor];
+//    window.windowLevel = UIWindowLevelAlert;
+//    window.hidden = NO;
+//    [UIApplication sharedApplication].statusBarHidden = NO;
+//    self.myWindow = window;
+    
+    [CHTopWindow show];
+    
+    
+    
+    
+    
+    
     return YES;
 }
 

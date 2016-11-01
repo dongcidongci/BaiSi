@@ -22,7 +22,7 @@
 
 @property (weak, nonatomic) IBOutlet UIImageView *laungchImageV;
 @property (weak, nonatomic) IBOutlet UIView *contentView;
-/**<#注释#>*/
+/**广告数据*/
 @property (nonatomic, strong)CHADDItem *addItem;
 @property (weak, nonatomic) IBOutlet UIButton *turnToBtn;
 /**定时器 */

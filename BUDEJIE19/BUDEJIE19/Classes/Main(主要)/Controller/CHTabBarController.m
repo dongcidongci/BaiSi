@@ -18,8 +18,9 @@
 
 #import "UIImage+CHImage.h"
 
-@interface CHTabBarController ()
-
+@interface CHTabBarController ()<UITabBarControllerDelegate>
+/**被选中的控制器 */
+@property(weak, nonatomic) UIViewController *selViewController;
 @end
 
 @implementation CHTabBarController
@@ -43,9 +44,27 @@
     //KVC修改属性值
     [self setValue:tabBar forKeyPath:@"tabBar"];
     
-    
+    self.delegate = self;
+    //默认第一个子控制器被选中
+    self.selViewController = self.childViewControllers[0];
     
 }
+
+#pragma mark - UITabBarControllerDelegate
+- (void)tabBar:(UITabBar *)tabBar didSelectItem:(UITabBarItem *)item{
+    //NSLog(@"%s", __func__);
+    
+}
+- (void)tabBarController:(UITabBarController *)tabBarController didSelectViewController:(UIViewController *)viewController{
+    if (self.selViewController == viewController) {
+        //发通知
+        [[NSNotificationCenter defaultCenter] postNotificationName:@"titleClick" object:nil];
+        
+    }
+    //记录当前被选中的控制器
+    self.selViewController = viewController;
+}
+
 #pragma mark- 添加子控制器
 - (void)addChildController{
     //精华

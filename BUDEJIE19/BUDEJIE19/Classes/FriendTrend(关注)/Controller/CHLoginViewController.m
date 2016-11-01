@@ -11,6 +11,7 @@
 
 @interface CHLoginViewController ()<CHLoginViewDelegate>
 
+
 @end
 
 @implementation CHLoginViewController

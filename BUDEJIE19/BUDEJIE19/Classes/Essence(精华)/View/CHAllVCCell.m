@@ -60,6 +60,7 @@
     CHVideoTopicView *videoView = [CHVideoTopicView loadXib];
     [self.contentView addSubview:videoView];
     self.videoView = videoView;
+    
     CHTopCommtentView *top_comView = [CHTopCommtentView loadXib];
     [self.contentView addSubview:top_comView];
     self.top_comView = top_comView;
@@ -84,8 +85,8 @@
     self.voiceView.allItem = essenceViewItem.allItem;
     self.voiceView.frame = essenceViewItem.middleViewFrame;
     
-    self.top_comView.allItem = essenceViewItem.allItem;
-    self.top_comView.frame = essenceViewItem.topCmt_ViewFrame;
+    
+    
     self.bottomView.allItem = essenceViewItem.allItem;
     self.bottomView.frame = essenceViewItem.bottomViewFrame;
     
@@ -97,6 +98,8 @@
         self.photoView.hidden = YES;
         self.videoView.hidden = YES;
         self.voiceView.hidden = NO;
+//        self.top_comView.hidden = !essenceViewItem.allItem.topCommentItem;
+       
     }else if (essenceViewItem.allItem.type == kCHTopicTypeVideo){
         self.photoView.hidden = YES;
         self.videoView.hidden = NO;
@@ -108,6 +111,8 @@
     }
     if (essenceViewItem.allItem.topCommentItem) {
         self.top_comView.hidden = NO;
+        self.top_comView.allItem = essenceViewItem.allItem;
+        self.top_comView.frame = essenceViewItem.topCmt_ViewFrame;
     }else{
         self.top_comView.hidden = YES;
     }
@@ -116,7 +121,7 @@
 
 - (void)setFrame:(CGRect)frame{
     frame.size.height -= 10;
-    frame.origin.y -= 10;
+    frame.origin.y += 10;
     [super setFrame:frame];
 }
 @end
